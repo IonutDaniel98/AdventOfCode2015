@@ -3,7 +3,7 @@ package service;
 import java.util.List;
 
 public class SolveDay1 {
-    public Integer getSantaFloor(List<String> input) {
+    public Integer getSantasFinalFloor(List<String> input) {
         var up = input.getFirst().replaceAll("[)]", "").length();
         var down = input.getFirst().replaceAll("[(]", "").length();
         return up - down;
